@@ -217,5 +217,10 @@ export default {
       ]
     }
   },
+  methods: {
+    get_pathname() {
+      return this.$route.fullPath
+    }
+  }
   }
 </script>
