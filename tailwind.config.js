@@ -13,12 +13,12 @@ module.exports = {
         current: 'currentColor',
         'ivory': '#F8FDED',
         'body': '#F1FBDA',
-        'sky' : '#99EBFF',
-        'ground' : '#81b559',
+        'sky': '#99EBFF',
+        'ground': '#81b559',
         'dino-yellow': '#fce354',
         'dino-green': '#729f4e',
-      },
-    },
+      }
+    }
   },
   plugins: [],
 }
