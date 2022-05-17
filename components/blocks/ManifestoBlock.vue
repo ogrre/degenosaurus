@@ -1,6 +1,6 @@
 <template>
   <section class="container mx-auto lg:mt-12 mt-0 mb-12 py-8">
-    <div class="lg:w-1/2 mb-40 lg:mb-12 px-12 md:pl-8 text-center md:text-left">
+    <div class="lg:w-1/2 mb-40 lg:mb-12 px-12 md:pl-8 text-left">
       <h1 class="text-2xl md:text-3xl xl:text-4xl mb-6">MANIFESTO</h1>
       <p class="text-gray-900">
         <span class="uppercase text-xl text-dino-green">Gm fren ! 👋🏻</span>

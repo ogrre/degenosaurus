@@ -3,8 +3,8 @@
     <ManifestoDino v-if="get_pathname() === '/manifesto'"/>
     <div class="container px-5 py-12 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
       <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
-        <div class="flex">
-          <button class="ml-10 my-auto sm:mx-1">
+        <div class="flex justify-center">
+          <button class="ml-10 my-auto sm:mx-1 hidden md:flex">
             <NuxtLink to="/">
               <img class="h-12" alt="dino" src="/circle-dino-stroke.svg">
             </NuxtLink>
@@ -200,15 +200,17 @@
             </NuxtLink>
           </button>
         </div>
-        <p class="mt-2 text-sm text-gray-900">777 Dinos coming to bring fun back to NFT minting !</p>
+        <p class="mt-2 text-sm text-gray-900 text-center">777 Dinos coming to bring fun back to NFT minting !</p>
       </div>
       <div class="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
         <div v-for="category in categories" class="lg:w-1/4 md:w-1/2 w-full px-4">
           <h2 class="text-dino-green tracking-widest text-sm mb-3">{{ category.name }}</h2>
           <nav class="list-none mb-10">
             <li v-for="subcategory in category.subcategories">
-              <NuxtLink :to="subcategory.slug"
-                        :class="['text-dino', subcategory.disabled ? 'hover:text-gray-500 time-cursor' : 'hover:text-dino-green cursor-pointer']">
+              <a v-if="subcategory.name === 'White Paper'" :href="subcategory.slug" :class="['text-dino', subcategory.disabled ? 'hover:text-gray-500 time-cursor' : 'hover:text-dino-green cursor-pointer']">
+                {{ subcategory.name }}
+              </a>
+              <NuxtLink v-else :to="subcategory.slug" :class="['text-dino', subcategory.disabled ? 'hover:text-gray-500 time-cursor' : 'hover:text-dino-green cursor-pointer']">
                 {{ subcategory.name }}
               </NuxtLink>
             </li>
@@ -236,7 +238,7 @@ export default {
         {
           name: "ABOUT",
           subcategories: [
-            {name: 'White Paper', slug: 'white_paper.pdf', disabled: true},
+            {name: 'White Paper', slug: 'https://drive.google.com/file/d/1QaVD9yxD8okTqp6z0pjJrokKxmTNEHUY/view'},
             {name: 'Manifesto', slug: 'manifesto'},
             {name: 'Roadmap', slug: 'roadmap', disabled: true},
             {name: 'Team', slug: 'team'},

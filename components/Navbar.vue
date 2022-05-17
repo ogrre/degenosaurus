@@ -137,7 +137,7 @@
 
 <!--    {/*mobile navbar*/}-->
     <div :class="['lg:hidden', menuIsOpen && 'fixed z-50 w-full h-full bg-body/95']">
-    <div class="container mx-auto flex justify-between w-11/12 p-4">
+    <div class="container p-4 mx-auto flex justify-between w-11/12">
       <NuxtLink to="/">
         <img class="h-12" alt="dino" src="/circle-dino-stroke.svg">
       </NuxtLink>
@@ -151,12 +151,12 @@
     </button>
     </div>
       <template v-if="menuIsOpen">
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 p-4 border-y-2 border-dino-yellow mt-6">
+        <div @click="openMenu" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 p-4 border-y-2 border-dino-yellow">
           <template v-for="item in items">
-            <NuxtLink v-if="item.disabled" to="" class="col-span-1 py-2 px-4 box-decoration-clone text-center rounded bg-dino-green/70 text-gray-900/50 time-cursor">
+            <NuxtLink v-if="item.disabled" to="" class="p-1 col-span-1 box-decoration-clone text-center rounded bg-dino-green/70 text-gray-900/50 time-cursor">
               {{ item.name }}
             </NuxtLink>
-            <NuxtLink v-else :to="item.slug" class="col-span-1 py-2 px-4 box-decoration-clone text-center rounded bg-dino-green text-ivory">
+            <NuxtLink v-else :to="item.slug" class="p-1 col-span-1 box-decoration-clone text-center rounded bg-dino-green text-ivory">
               {{ item.name }}
             </NuxtLink>
           </template>
@@ -179,7 +179,7 @@
             </a>
           </button>
         </div>
-          <img class="absolute bottom-0 left-1/3 h-24 sm:h-32 md:h-48" alt="dino" src="/stickers/STICKER_gentlemen_HD.png">
+          <img class="absolute bottom-0 left-12 h-24 md:h-32" alt="dino" src="/stickers/STICKER_gentlemen_HD.png">
       </template>
     </div>
   </nav>
