@@ -27,16 +27,7 @@ export default {
   buildModules: [
     '@nuxt/postcss8',
     '@nuxt/typescript-build',
-    '@nuxtjs/fontawesome'
   ],
-
-  fontawesome:{
-    component: 'fa',
-    icons:{
-      solid: true,
-      brands: true
-    }
-  },
 
   modules: [
   ],

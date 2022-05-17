@@ -1,8 +1,7 @@
 <template>
   <footer class="bg-ivory">
     <ManifestoDino v-if="get_pathname() === '/manifesto'"/>
-    <div
-      class="container px-5 py-12 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
+    <div class="container px-5 py-12 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
       <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
         <div class="flex">
           <button class="ml-10 my-auto sm:mx-1">
@@ -217,36 +216,18 @@
         </div>
       </div>
     </div>
-    <div class="bg-dino-green pt-1">
-      <div class="container mx-auto py-3 px-5 flex flex-wrap flex-col sm:flex-row">
-        <p class="text-ivory text-sm text-center sm:text-left">© 2022 Degenosaur.us —
-          <a href="https://twitter.com/Degenosaur_Us" target="_blank" rel="noopener noreferrer"
-             class="text-lime-100 ml-1">
-            @Degenosaur_Us
-          </a>
-        </p>
-        <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
-          <div v-for="network in networks"
-               :class="['mx-2', network.disabled ? 'text-ivory/50 time-cursor' : 'text-ivory cursor-pointer']">
-              <a v-bind:href="network.slug" target="_blank" rel="noopener noreferrer">
-                  <fa v-if="network.name === 'instagram'" :icon='["fab" , "instagram"]'/>
-                  <fa v-else-if="network.name === 'discord'" :icon='["fab" , "discord"]'/>
-                  <fa v-else-if="network.name === 'twitter'" :icon='["fab" , "twitter"]'/>
-                  <fa v-else :icon='["fa" , "toilet-paper"]'/>
-              </a>
-          </div>
-        </span>
-      </div>
-    </div>
+    <FooterBlock/>
   </footer>
 </template>
 
 <script>
 import ManifestoDino from "./ManifestoDino";
+import FooterBlock from "@/components/blocks/FooterBlock";
 
 export default {
   name: "Footer",
   components: {
+    FooterBlock,
     ManifestoDino,
   },
   data() {
@@ -275,12 +256,6 @@ export default {
             {name: 'FAQ', slug: 'faq', disabled: true},
           ]
         }
-      ],
-      networks: [
-        {name: 'white_paper', slug: '', icon: 'faToiletPaper', disabled: true},
-        {name: 'discord', slug: 'https://discord.gg/zGdyRf5v', icon: 'faDiscord'},
-        {name: 'instagram', slug: 'https://www.instagram.com/degenosaur.us/', icon: 'faInstagram'},
-        {name: 'twitter', slug: 'https://twitter.com/Degenosaur_Us', icon: 'faTwitter'},
       ]
     }
   },
