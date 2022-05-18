@@ -15,7 +15,18 @@
           </div>
           <img class="absolute bottom-0 right-0 h-20" alt="dino" :src="network.src"/>
         </a>
-        <a v-else :href="network.link" target="_blank" rel="noopener noreferrer" :class="['flex justify-between mx-6 my-4', network.disabled && 'time-cursor']">
+        <a v-else-if="network.title === 'roadmap'" :href="network.link" class="flex justify-between mx-6 my-4">
+          <div>
+            <h1 class="first-letter:uppercase text-gray-900 text-xl md:text-2xl">
+              {{ network.title }}
+            </h1>
+            <p class="text-dino-green text-xs">
+              {{ network.text }}
+            </p>
+          </div>
+          <img class="absolute bottom-0 right-0 h-20" alt="dino" :src="network.src"/>
+        </a>
+        <a v-else :href="network.link" target="_blank" rel="noopener noreferrer" class="flex justify-between mx-6 my-4">
           <div>
             <h1 class="first-letter:uppercase text-gray-900 text-xl md:text-2xl">
               {{ network.title }}
@@ -50,7 +61,7 @@ export default {
           alt: 'Degenosaur_Discord',
           title: 'discord',
           text: 'Join community',
-          link: 'https://discord.com/',
+          link: 'https://discord.gg/HF88aGHWdm',
         },
         {
           src: '/networks/Degenosaur_Twitter.png',

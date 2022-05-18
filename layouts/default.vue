@@ -2,7 +2,7 @@
   <main class="flex flex-col justify-between h-full min-h-screen">
     <div>
       <Navbar/>
-      <Nuxt />
+      <Nuxt/>
       <Network v-if="get_pathname() !== '/manifesto'"/>
     </div>
     <Footer/>

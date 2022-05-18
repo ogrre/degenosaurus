@@ -6,7 +6,7 @@
         <div class="flex justify-center">
           <button class="ml-10 my-auto sm:mx-1 hidden md:flex">
             <NuxtLink to="/">
-              <img class="h-12" alt="dino" src="/circle-dino-stroke.svg">
+              <img class="h-12" alt="dino" src="/main/circle-dino-stroke.svg">
             </NuxtLink>
           </button>
           <button class="mx-1 my-auto">
@@ -207,10 +207,13 @@
           <h2 class="text-dino-green tracking-widest text-sm mb-3">{{ category.name }}</h2>
           <nav class="list-none mb-10">
             <li v-for="subcategory in category.subcategories">
-              <a v-if="subcategory.name === 'White Paper'" :href="subcategory.slug" :class="['text-dino', subcategory.disabled ? 'hover:text-gray-500 time-cursor' : 'hover:text-dino-green cursor-pointer']">
+              <a v-if="subcategory.disabled" class="text-dino hover:text-gray-500 time-cursor">
                 {{ subcategory.name }}
               </a>
-              <NuxtLink v-else :to="subcategory.slug" :class="['text-dino', subcategory.disabled ? 'hover:text-gray-500 time-cursor' : 'hover:text-dino-green cursor-pointer']">
+              <a v-else-if="subcategory.name === 'White Paper'" :href="subcategory.slug" class="text-dino hover:text-dino-green cursor-pointer">
+                {{ subcategory.name }}
+              </a>
+              <NuxtLink v-else :to="subcategory.slug" class="text-dino hover:text-dino-green cursor-pointer">
                 {{ subcategory.name }}
               </NuxtLink>
             </li>
