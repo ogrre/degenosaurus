@@ -47,7 +47,7 @@ export default {
           pfp: '/pfp/0GRE.png',
           name: 'OGRE',
           job: 'CTO',
-          twitter: 'https://twitter.com/OGRE90768203',
+          twitter: 'https://twitter.com/Degen_0gre',
           description: 'Back end web developer, passionate about artistic creation and recently introduced to web3 and blockchain technologies, joining an NFT project was the logical next step.'
         },
         {

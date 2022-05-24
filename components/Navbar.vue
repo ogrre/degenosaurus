@@ -168,7 +168,7 @@ export default {
         {name: 'Mint', slug: '', disabled: true},
         {name: 'Manifesto', slug: 'manifesto'},
         {name: 'Shop', slug: '', disabled: true},
-        {name: 'Roadmap', slug: 'roadmap', disabled: true},
+        {name: 'Roadmap', slug: 'roadmap'},
         {name: 'Attributes', slug: 'attributes', disabled: true},
         {name: 'Team', slug: 'team'},
         {name: 'FAQ', slug: 'faq', disabled: true},

@@ -243,7 +243,7 @@ export default {
           subcategories: [
             {name: 'White Paper', slug: 'https://drive.google.com/file/d/1QaVD9yxD8okTqp6z0pjJrokKxmTNEHUY/view'},
             {name: 'Manifesto', slug: 'manifesto'},
-            {name: 'Roadmap', slug: 'roadmap', disabled: true},
+            {name: 'Roadmap', slug: 'roadmap'},
             {name: 'Team', slug: 'team'},
           ]
         },

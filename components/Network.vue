@@ -54,7 +54,6 @@ export default {
           title: 'roadmap',
           text: 'The plan',
           link: '/roadmap',
-          disabled: true
         },
         {
           src: '/networks/Degenosaur_Discord.png',
