@@ -1,7 +1,7 @@
 <template>
   <section class="container mx-auto lg:my-12 mt-0 mb-12 py-8 p-12 border-b-2 border-dino-green/50">
     <div class="text-center">
-      <h1 class="text-2xl md:text-3xl xl:text-4xl mb-6">Roamap</h1>
+      <h1 class="text-2xl md:text-3xl xl:text-4xl mb-6">Roadmap</h1>
       <h2 class="sm:text-lg md:text-xl text-dino-green mb-12">What is planned for Degenosaurs</h2>
     </div>
   <div v-for="quarter in quarters"  :class="['mx-auto w-full lg:w-2/3  flex border-dashed border-red-600 p-2 ', quarter.inverse ? 'border-r-8 border-y-8 rounded-r-lg' : 'border-l-8']">
