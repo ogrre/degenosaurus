@@ -1,5 +1,5 @@
 <template>
-  <nav>
+  <nav class="z-50">
 <!--    {/*desktop navbar*/}-->
     <div class="container mx-auto w-10/12 py-3 flex justify-between h-20 hidden lg:flex">
       <div class="flex">
