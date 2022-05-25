@@ -21,7 +21,7 @@
         class="text-dino-green font-bold">bringing back</span> fun to minting.
         <br/>
         <br/>
-        Let me ask you a question : would you rather work your whole life or make <span
+        Let me ask you a question: would you rather work your whole life or make <span
         class="text-dino-green font-bold">life changing</span> gains in 1 mint ? 100% of winner have
         once played!
         <br/>

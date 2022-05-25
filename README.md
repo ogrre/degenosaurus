@@ -8,6 +8,6 @@ For many of us, it has become a work, and fun has been slowly disappearing since
 
 Thankfully, many new projects are breathing the wind of change in the community, and we are one of those and bringing back fun to minting.
 
-Let me ask you a question : would you rather work your whole life or make life changing gains in 1 mint ? 100% of winner have once played!
+Let me ask you a question: would you rather work your whole life or make life changing gains in 1 mint ? 100% of winner have once played!
 
 Hold your seat and stick with us, **WAGMI** ! 

@@ -14,7 +14,7 @@
     </div>
   </div>
     <div class="text-center">
-      <h2 class="sm:text-lg md:text-xl my-12">More infos ? click on white paper !</h2>
+      <h2 class="sm:text-lg md:text-xl my-12">More infos? Click on white paper!</h2>
       <div class="flex justify-center align-middle">
         <a href="https://drive.google.com/file/d/1QaVD9yxD8okTqp6z0pjJrokKxmTNEHUY/view" class="cursor-pointer mx-auto bg-dino-green rounded-full p-3 motion-safe:animate-bounce" target="_blank" rel="noopener noreferrer">
           <svg class="fill-white w-7 h-7" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">

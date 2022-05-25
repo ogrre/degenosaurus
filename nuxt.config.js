@@ -11,7 +11,7 @@ export default {
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/dino.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/main/dino.ico' }
     ]
   },
 
