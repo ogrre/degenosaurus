@@ -27,6 +27,7 @@ export default {
   buildModules: [
     '@nuxt/postcss8',
     '@nuxt/typescript-build',
+    '@nuxtjs/google-analytics'
   ],
 
   modules: [
@@ -39,5 +40,9 @@ export default {
         autoprefixer: {}
       }
     }
+  },
+
+  googleAnalytics: {
+    id: 'G-TLMJVBFGY1'
   }
 }
