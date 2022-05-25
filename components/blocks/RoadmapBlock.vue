@@ -6,15 +6,15 @@
     </div>
   <div v-for="quarter in quarters"  :class="['mx-auto w-full lg:w-2/3  flex border-dashed border-red-600 p-2 ', quarter.inverse ? 'border-r-8 border-y-8 rounded-r-lg' : 'border-l-8']">
     <div class="w-full p-4 lg:p-8">
-        <h1 class="text-center text-xl mb-4">{{quarter.title}} 2022</h1>
+        <h1 class="text-center text-xl mb-8">{{quarter.title}} 2022</h1>
         <div v-for="step in quarter.steps" :class="['relative p-4 m-4 flex gap-2 border-2 border-dino-green rounded', step.validated && 'bg-dino-green/20']">
           <h2>{{step.title}}</h2>
-          <img v-if="step.validated" class="absolute right-0 bottom-0 h-16" src="/stickers/STICKER_flame_HD.png" alt="">
+          <img v-if="step.validated" class="absolute right-0 bottom-0 h-12 lg:h-16" src="/stickers/STICKER_flame_HD.png" alt="">
         </div>
     </div>
   </div>
     <div class="text-center">
-      <h2 class="sm:text-lg md:text-xl my-12">More infos ? click on white (toilet) paper !</h2>
+      <h2 class="sm:text-lg md:text-xl my-12">More infos ? click on white paper !</h2>
       <div class="flex justify-center align-middle">
         <a href="https://drive.google.com/file/d/1QaVD9yxD8okTqp6z0pjJrokKxmTNEHUY/view" class="cursor-pointer mx-auto bg-dino-green rounded-full p-3 motion-safe:animate-bounce" target="_blank" rel="noopener noreferrer">
           <svg class="fill-white w-7 h-7" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
@@ -22,8 +22,6 @@
           </svg>
         </a>
       </div>
-
-
     </div>
   </section>
 </template>
