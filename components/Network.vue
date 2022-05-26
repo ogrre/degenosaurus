@@ -1,9 +1,9 @@
 <template>
   <section class="container mx-auto my-12">
     <div class="px-16 grid gap-8 grid-cols-1 sm:grid-cols-2 xl:grid-cols-4">
-      <div v-for="network in networks" :class="['h-24 col-span-1 bg-ivory',
-      network.disabled ? 'hover:bg-gray-500/30 relative time-cursor'
-      : 'hover:bg-dino-green/30 relative cursor-pointer']">
+      <div v-for="network in networks"
+           :class="['h-24 col-span-1 bg-ivory relative duration-200',
+           network.disabled ? 'hover:bg-gray-500/30 time-cursor' : 'hover:bg-dino-green/30 cursor-pointer']">
         <a v-if="network.disabled" class="flex justify-between mx-6 my-4 time-cursor">
           <div>
             <h1 class="first-letter:uppercase text-gray-900 text-xl md:text-2xl">
