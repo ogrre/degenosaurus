@@ -5,7 +5,7 @@
         <h1 class="text-2xl md:text-3xl xl:text-4xl mb-6">TEAM</h1>
         <h2 class="first-letter:uppercase sm:text-lg md:text-xl text-dino-green">an incredible band of degenerate friends</h2>
       </div>
-      <div v-for="teammate in teammates" class="mx-auto col-span-1 w-64 px-2">
+      <div v-for="teammate in teammates" class="mx-auto col-span-1 w-64 p-2 duration-300 hover:backdrop-brightness-[96%] hover:scale-110 hover:skew-y-1">
         <img class="w-64" alt="dino" :src="teammate.pfp" />
           <div class="flex justify-between mt-2 mb-1">
             <h3 class="text-lg lg:text-2xl text-gray-900">
