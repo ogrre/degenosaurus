@@ -72,7 +72,7 @@ export default {
         {
           src: '/networks/Degenosaur_Manifesto.png',
           alt: 'Degenosaur_Roadmap',
-          title: 'insta',
+          title: 'instagram',
           text: 'Beautiful dinos',
           link: 'https://www.instagram.com/degenosaur.us/',
         }
