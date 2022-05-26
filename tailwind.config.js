@@ -51,10 +51,10 @@ module.exports = {
         },
         slowCloud2: {
           '0%': {
-            transform: 'translateX(50%)'
+            transform: 'translateX(150%)'
           },
           '100%': {
-            transform: 'translateX(-150%)'
+            transform: 'translateX(50%)'
           },
         },
       },
