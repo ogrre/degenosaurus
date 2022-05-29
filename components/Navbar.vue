@@ -85,7 +85,7 @@
             <p class="">{{ item.name }}</p>
           </div>
           <NuxtLink :to=item.slug v-else :class="['text-xs uppercase font-semibold tracking-widest p-2.5 rounded bg-ivory duration-200',
-            get_pathname() === '/' + item.slug && item.disabled !== true ? 'border border-dino-green' : 'hover:text-ivory hover:bg-dino-green/90']">
+            get_pathname() === '/' + item.slug && item.disabled !== true ? 'outline outline-1 outline-dino-green' : 'hover:text-ivory hover:bg-dino-green/90']">
               <p class="">{{ item.name }}</p>
           </NuxtLink>
         </template>
@@ -171,7 +171,7 @@ export default {
         {name: 'Roadmap', slug: 'roadmap'},
         {name: 'Attributes', slug: 'attributes', disabled: true},
         {name: 'Team', slug: 'team'},
-        {name: 'FAQ', slug: 'faq', disabled: true},
+        {name: 'FAQ', slug: 'faq'},
       ],
       networks: [
         {name: 'white_paper', slug: 'https://drive.google.com/file/d/1QaVD9yxD8okTqp6z0pjJrokKxmTNEHUY/view'},

@@ -258,7 +258,7 @@ export default {
         {
           name: "SUPPORT",
           subcategories: [
-            {name: 'FAQ', slug: 'faq', disabled: true},
+            {name: 'FAQ', slug: 'faq'},
           ]
         }
       ]

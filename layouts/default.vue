@@ -1,10 +1,10 @@
 <template>
   <main class="flex flex-col justify-between h-full min-h-screen">
-    <div>
+    <template>
       <Navbar/>
       <Nuxt/>
       <Network v-if="get_pathname() !== '/manifesto'"/>
-    </div>
+    </template>
     <Footer/>
   </main>
 </template>
