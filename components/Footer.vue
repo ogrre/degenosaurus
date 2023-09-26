@@ -251,7 +251,7 @@ export default {
           name: "DEGENOSAUR",
           subcategories: [
             {name: 'Mint', slug: '', disabled: true},
-            {name: 'Attributes', slug: 'attributes', disabled: true},
+            {name: 'Attributes', slug: 'attributes'},
             {name: 'Shop', slug: '', disabled: true},
           ]
         },
