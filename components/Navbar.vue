@@ -169,7 +169,7 @@ export default {
         {name: 'Manifesto', slug: 'manifesto'},
         {name: 'Shop', slug: '', disabled: true},
         {name: 'Roadmap', slug: 'roadmap'},
-        {name: 'Attributes', slug: 'attributes', disabled: true},
+        {name: 'Attributes', slug: 'attributes'},
         {name: 'Team', slug: 'team'},
         {name: 'FAQ', slug: 'faq'},
       ],
