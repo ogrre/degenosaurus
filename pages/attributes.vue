@@ -1,5 +1,5 @@
 <template>
-<!--  <AttributesBlock/>-->
+  <AttributesBlock/>
 </template>
 
 <script>
