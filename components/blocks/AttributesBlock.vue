@@ -258,9 +258,6 @@ export default {
         {
           name: 'tail',
         },
-        {
-          name: 'arm',
-        },
       ]
     }
   }
