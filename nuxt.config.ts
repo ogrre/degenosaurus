@@ -1,4 +1,4 @@
-export default {
+export default defineNuxtConfig({
   head: {
     title: 'Degenosaur.us',
     htmlAttrs: {
@@ -19,30 +19,18 @@ export default {
     '@/assets/css/main.css',
   ],
 
-  plugins: [
-  ],
-
-  components: true,
-
-  buildModules: [
-    '@nuxt/postcss8',
-    '@nuxt/typescript-build',
-    '@nuxtjs/google-analytics'
-  ],
-
   modules: [
+    '@nuxtjs/tailwindcss'
   ],
 
-  build: {
-    postcss: {
-      plugins: {
-        tailwindcss: {},
-        autoprefixer: {}
-      }
+  devtools: { enabled: true },
+
+  postcss: {
+    plugins: {
+      tailwindcss: {},
+      autoprefixer: {}
     }
   },
 
-  googleAnalytics: {
-    id: 'G-TLMJVBFGY1'
-  }
-}
+  compatibilityDate: '2024-12-19'
+})

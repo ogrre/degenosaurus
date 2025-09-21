@@ -30,12 +30,8 @@
   </section>
 </template>
 
-<script lang="ts">
-import Vue from 'vue'
-
-export default Vue.extend({
-  layout: 'home',
-  name: 'Home',
-  props: {},
+<script setup>
+definePageMeta({
+  layout: 'home'
 })
 </script>
