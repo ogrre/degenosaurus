@@ -1,3 +1,9 @@
 {
-  "framework": "nuxtjs"
+  "framework": "nuxtjs",
+  "buildCommand": "npm run build",
+  "functions": {
+    "app/**": {
+      "runtime": "nodejs20.x"
+    }
+  }
 }
