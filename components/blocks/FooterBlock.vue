@@ -29,18 +29,11 @@
   </div>
 </template>
 
-<script>
-export default {
-  name: "FooterBlock",
-  data() {
-    return {
-      networks: [
-        {name: 'white_paper', slug: 'https://drive.google.com/file/d/1QaVD9yxD8okTqp6z0pjJrokKxmTNEHUY/view', icon: '/svg/toilet-paper-solid.svg'},
-        {name: 'discord', slug: 'https://discord.gg/HF88aGHWdm', icon: '/svg/discord-brands.svg'},
-        {name: 'instagram', slug: 'https://www.instagram.com/degenosaur.us/', icon: '/svg/instagram-brands.svg'},
-        {name: 'twitter', slug: 'https://twitter.com/Degenosaur_Us', icon: '/svg/twitter-brands.svg'},
-      ]
-    }
-  },
-}
+<script setup>
+const networks = ref([
+  {name: 'white_paper', slug: 'https://drive.google.com/file/d/1QaVD9yxD8okTqp6z0pjJrokKxmTNEHUY/view', icon: '/svg/toilet-paper-solid.svg'},
+  {name: 'discord', slug: 'https://discord.gg/HF88aGHWdm', icon: '/svg/discord-brands.svg'},
+  {name: 'instagram', slug: 'https://www.instagram.com/degenosaur.us/', icon: '/svg/instagram-brands.svg'},
+  {name: 'twitter', slug: 'https://twitter.com/Degenosaur_Us', icon: '/svg/twitter-brands.svg'},
+])
 </script>
