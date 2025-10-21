@@ -84,7 +84,7 @@
             <p class="">{{ item.name }}</p>
           </div>
           <NuxtLink :to=item.slug v-else :class="['text-xs uppercase font-semibold tracking-widest p-2.5 rounded bg-ivory duration-200',
-            get_pathname() === '/' + item.slug && item.disabled !== true ? 'outline outline-1 outline-dino-green' : 'hover:text-ivory hover:bg-dino-green/90']">
+            currentPath === '/' + item.slug && item.disabled !== true ? 'outline outline-1 outline-dino-green' : 'hover:text-ivory hover:bg-dino-green/90']">
               <p class="">{{ item.name }}</p>
           </NuxtLink>
         </template>
@@ -158,7 +158,7 @@
   </nav>
 </template>
 <script setup>
-import { ref } from 'vue'
+import { ref, computed } from 'vue'
 
 const route = useRoute()
 
@@ -180,9 +180,7 @@ const networks = ref([
   {name: 'twitter', slug: 'https://twitter.com/Degenosaur_Us'},
 ])
 
-function get_pathname() {
-  return route.fullPath
-}
+const currentPath = computed(() => route.fullPath)
 
 function openMenu() {
   menuIsOpen.value = !menuIsOpen.value
