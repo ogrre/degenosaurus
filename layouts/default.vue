@@ -1,31 +1,20 @@
 <template>
   <main class="flex flex-col justify-between h-full min-h-screen">
-    <template>
-      <Navbar/>
-      <Nuxt/>
-      <Network v-if="get_pathname() !== '/manifesto'"/>
-    </template>
+    <Navbar/>
+    <NuxtPage/>
+    <Network v-if="currentPath !== '/manifesto' && currentPath !== '/'"/>
     <Footer/>
   </main>
 </template>
 
-<script>
-import Navbar from "~/components/Navbar";
-import Footer from "~/components/Footer";
-import Network from "../components/Network";
+<script setup>
+import { computed } from "vue";
+import Navbar from "~/components/Navbar.vue";
+import Footer from "~/components/Footer.vue";
+import Network from "~/components/Network.vue";
 
-export default {
-  name: "Layout",
-  components: {
-    Network,
-    Navbar,
-    Footer,
-  },
-  methods: {
-    get_pathname() {
-      return this.$route.fullPath
-    }
-  }
-}
+const route = useRoute();
+
+const currentPath = computed(() => route.fullPath);
 </script>
 

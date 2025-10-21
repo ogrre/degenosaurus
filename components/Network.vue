@@ -42,42 +42,35 @@
   </section>
 </template>
 
-<script>
-export default {
-  name: "Network",
-  data(){
-    return{
-      networks: [
-        {
-          src: '/networks/Degenosaur_Roadmap.png',
-          alt: 'Degenosaur_Roadmap',
-          title: 'roadmap',
-          text: 'The plan',
-          link: '/roadmap',
-        },
-        {
-          src: '/networks/Degenosaur_Discord.png',
-          alt: 'Degenosaur_Discord',
-          title: 'discord',
-          text: 'Join community',
-          link: 'https://discord.gg/HF88aGHWdm',
-        },
-        {
-          src: '/networks/Degenosaur_Twitter.png',
-          alt: 'Degenosaur_Twitter',
-          title: 'twitter',
-          text: 'Stay informed',
-          link: 'https://twitter.com/Degenosaur_Us',
-        },
-        {
-          src: '/networks/Degenosaur_Manifesto.png',
-          alt: 'Degenosaur_Roadmap',
-          title: 'instagram',
-          text: 'Beautiful dinos',
-          link: 'https://www.instagram.com/degenosaur.us/',
-        }
-      ]
-    }
+<script setup>
+const networks = ref([
+  {
+    src: '/networks/Degenosaur_Roadmap.png',
+    alt: 'Degenosaur_Roadmap',
+    title: 'roadmap',
+    text: 'The plan',
+    link: '/roadmap',
+  },
+  {
+    src: '/networks/Degenosaur_Discord.png',
+    alt: 'Degenosaur_Discord',
+    title: 'discord',
+    text: 'Join community',
+    link: 'https://discord.gg/HF88aGHWdm',
+  },
+  {
+    src: '/networks/Degenosaur_Twitter.png',
+    alt: 'Degenosaur_Twitter',
+    title: 'twitter',
+    text: 'Stay informed',
+    link: 'https://twitter.com/Degenosaur_Us',
+  },
+  {
+    src: '/networks/Degenosaur_Manifesto.png',
+    alt: 'Degenosaur_Roadmap',
+    title: 'instagram',
+    text: 'Beautiful dinos',
+    link: 'https://www.instagram.com/degenosaur.us/',
   }
-}
+])
 </script>

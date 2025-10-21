@@ -5,9 +5,7 @@
   </section>
 </template>
 
-<script>
-export default {
-  name: "ManifestoDino",
-}
+<script setup>
+// Vue 3 component
 </script>
 

@@ -225,50 +225,40 @@
   </footer>
 </template>
 
-<script>
-import ManifestoDino from "./ManifestoDino";
-import FooterBlock from "@/components/blocks/FooterBlock";
+<script setup>
+import FooterBlock from "@/components/blocks/FooterBlock.vue";
+import ManifestoDino from "@/components/ManifestoDino.vue";
 
-export default {
-  name: "Footer",
-  components: {
-    FooterBlock,
-    ManifestoDino,
+const categories = ref([
+  {
+    name: "ABOUT",
+    subcategories: [
+      {name: 'White Paper', slug: 'https://drive.google.com/file/d/1QaVD9yxD8okTqp6z0pjJrokKxmTNEHUY/view'},
+      {name: 'Manifesto', slug: 'manifesto'},
+      {name: 'Roadmap', slug: 'roadmap'},
+      {name: 'Team', slug: 'team'},
+    ]
   },
-  data() {
-    return {
-      categories: [
-        {
-          name: "ABOUT",
-          subcategories: [
-            {name: 'White Paper', slug: 'https://drive.google.com/file/d/1QaVD9yxD8okTqp6z0pjJrokKxmTNEHUY/view'},
-            {name: 'Manifesto', slug: 'manifesto'},
-            {name: 'Roadmap', slug: 'roadmap'},
-            {name: 'Team', slug: 'team'},
-          ]
-        },
-        {
-          name: "DEGENOSAUR",
-          subcategories: [
-            {name: 'Mint', slug: '', disabled: true},
-            {name: 'Attributes', slug: 'attributes'},
-            {name: 'Shop', slug: '', disabled: true},
-          ]
-        },
-        {
-          name: "SUPPORT",
-          subcategories: [
-            {name: 'FAQ', slug: 'faq'},
-          ]
-        }
-      ]
-    }
+  {
+    name: "DEGENOSAUR",
+    subcategories: [
+      {name: 'Mint', slug: '', disabled: true},
+      {name: 'Attributes', slug: 'attributes'},
+      {name: 'Shop', slug: '', disabled: true},
+    ]
   },
-  methods: {
-    get_pathname() {
-      return this.$route.fullPath
-    }
+  {
+    name: "SUPPORT",
+    subcategories: [
+      {name: 'FAQ', slug: 'faq'},
+    ]
   }
+])
+
+const route = useRoute()
+
+const get_pathname = () => {
+  return route.fullPath
 }
 </script>
 
